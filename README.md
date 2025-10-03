@@ -1,4 +1,6 @@
 # 🌐 Static Website Hosting with AWS S3 + CloudFront + CI/CD  
+
+### PROJECT STRUCTURE 
 ![Bucket Creation](screenshots/cloudDiagram.drawio.png)
 
 This project demonstrates how to host a **static website** on **Amazon S3**, deliver it globally with **CloudFront CDN**, and automate deployments using **GitHub Actions**.  
@@ -27,21 +29,17 @@ Developer → GitHub Repo → GitHub Actions → S3 Bucket → CloudFront → En
 
 ---
 
-## 📂 Project Structure
-
-![Bucket Creation](screenshots/cloudDiagram.drawio.png)
-
-
-
----
-
 ## ⚙️ Setup Instructions
 
 ### 1️⃣ Create S3 Bucket  
 - Go to **AWS S3 Console**  
 - Create a bucket (region example: `ap-south-1`)  
 - Keep **Block Public Access = ON**  
-- Upload your static website files (`index.html`, CSS, JS, images, etc.)  
+- Upload your static website files (`index.html`, CSS, JS, images, etc.)
+![Bucket Creation](screenshots/create2.png)
+![Bucket Creation](screenshots/upload.png)
+
+
 
 ---
 
@@ -50,6 +48,9 @@ Developer → GitHub Repo → GitHub Actions → S3 Bucket → CloudFront → En
 - **Origin** = your S3 bucket  
 - Use **Origin Access Control (OAC)** (so only CloudFront can read from S3)  
 - Copy the CloudFront domain (e.g., `d1234abcd.cloudfront.net`)  
+![Bucket Creation](screenshots/createaclouidfrontdestri.png)
+![Bucket Creation](screenshots/distribution.png)
+
 
 ---
 
