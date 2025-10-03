@@ -38,6 +38,9 @@ Developer → GitHub Repo → GitHub Actions → S3 Bucket → CloudFront → En
 - Upload your static website files (`index.html`, CSS, JS, images, etc.)
 ![Bucket Creation](screenshots/create2.png)
 ![Bucket Creation](screenshots/upload.png)
+![Bucket Creation](screenshots/index.html.png)
+
+
 
 
 
@@ -84,7 +87,7 @@ Default → https://d1234abcd.cloudfront.net (your CloudFront domain)
 
 Optional → Add Route 53 + ACM SSL to use a custom domain (https://mywebsite.com)
 
-![Bucket Creation](screenshots/index.html.png)
+![Bucket Creation](screenshots/gallery-preview.png)
 
 
 ### 📌 Future Improvements
