@@ -61,38 +61,14 @@ Developer → GitHub Repo → GitHub Actions → S3 Bucket → CloudFront → En
 ---
 
 ### 3️⃣ Configure GitHub Actions  
-Create `.github/workflows/deploy.yml`:  
+![Bucket Creation](screenshots/git.png)
 
-```yaml
-name: Deploy to S3
+---
 
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v2
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ap-south-1   # Change to your bucket region
-
-      - name: Sync files to S3
-        run: aws s3 sync . s3://your-bucket-name --delete
-
-      - name: Invalidate CloudFront cache
-        run: aws cloudfront create-invalidation --distribution-id YOUR_DISTRIBUTION_ID --paths "/*"
-```
 ### 🔑 Secrets Setup in GitHub
 Go to GitHub Repo → Settings → Secrets and variables → Actions → New repository secret
+
+![Bucket Creation](screenshots/oac.png)
 
 Add:
 
@@ -106,6 +82,8 @@ Add:
 Default → https://d1234abcd.cloudfront.net (your CloudFront domain)
 
 Optional → Add Route 53 + ACM SSL to use a custom domain (https://mywebsite.com)
+![Bucket Creation](screenshots/index.html.png)
+
 
 ### 📌 Future Improvements
 
