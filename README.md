@@ -7,7 +7,7 @@ Ideal for portfolios, photo albums, or project showcases.
 ---
 
 ## 🌟 Features
-
+![Gallery Screenshot](screenshota/cloudDiagram.drawio.png)
 - ✅ Responsive design
 - ✅ Clean and minimal UI
 - ✅ Card layout for each image
