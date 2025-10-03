@@ -61,6 +61,7 @@ Developer → GitHub Repo → GitHub Actions → S3 Bucket → CloudFront → En
 ---
 
 ### 3️⃣ Configure GitHub Actions  
+
 ![Bucket Creation](screenshots/git.png)
 
 ---
@@ -68,7 +69,7 @@ Developer → GitHub Repo → GitHub Actions → S3 Bucket → CloudFront → En
 ### 🔑 Secrets Setup in GitHub
 Go to GitHub Repo → Settings → Secrets and variables → Actions → New repository secret
 
-![Bucket Creation](screenshots/oac.png)
+![Bucket Creation](screenshots/sec.png)
 
 Add:
 
@@ -82,6 +83,7 @@ Add:
 Default → https://d1234abcd.cloudfront.net (your CloudFront domain)
 
 Optional → Add Route 53 + ACM SSL to use a custom domain (https://mywebsite.com)
+
 ![Bucket Creation](screenshots/index.html.png)
 
 
