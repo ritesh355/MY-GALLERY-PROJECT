@@ -83,9 +83,9 @@ Add:
 
 ### 🌍 Access Your Website
 
-Default → https://d1234abcd.cloudfront.net (your CloudFront domain)
+Default →  (your CloudFront domain)
 
-Optional → Add Route 53 + ACM SSL to use a custom domain (https://mywebsite.com)
+Optional → Add Route 53 + ACM SSL to use a custom domain 
 
 ![Bucket Creation](screenshots/gallery-preview.png)
 
