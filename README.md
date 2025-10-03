@@ -1,4 +1,5 @@
 # 🌐 Static Website Hosting with AWS S3 + CloudFront + CI/CD  
+![Bucket Creation](screenshots/cloudDiagram.drawio.png)
 
 This project demonstrates how to host a **static website** on **Amazon S3**, deliver it globally with **CloudFront CDN**, and automate deployments using **GitHub Actions**.  
 
@@ -27,13 +28,9 @@ Developer → GitHub Repo → GitHub Actions → S3 Bucket → CloudFront → En
 ---
 
 ## 📂 Project Structure
-.
-├── index.html # Main website file
-├── styles.css # CSS styles
-├── script.js # Optional JS file
-└── .github/
-└── workflows/
-└── deploy.yml # GitHub Actions workflow
+
+![Bucket Creation](screenshots/cloudDiagram.drawio.png)
+
 
 
 ---
