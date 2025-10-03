@@ -49,7 +49,13 @@ Developer → GitHub Repo → GitHub Actions → S3 Bucket → CloudFront → En
 - Use **Origin Access Control (OAC)** (so only CloudFront can read from S3)  
 - Copy the CloudFront domain (e.g., `d1234abcd.cloudfront.net`)  
 ![Bucket Creation](screenshots/createaclouidfrontdestri.png)
+
+---
+
 ![Bucket Creation](screenshots/distribution.png)
+
+--- 
+![Bucket Creation](screenshots/oac.png)
 
 
 ---
